@@ -23,7 +23,10 @@ export default function Home() {
           <Hero/>
         </div>
       </div>
+      <div className="mt-44 mb-44">
+        <h1 className="flex justify-center mb-20 text-5xl font-bold text-white sm:text-7xl">CASE <span className="text-[#BEFB7C] pl-3">STUDIES.</span></h1>
       <ZoomParallax />
+      </div>
 
     </>
   );
