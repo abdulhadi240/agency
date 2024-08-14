@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "../components/Hero";
-import {Example} from "../components/Navbar";
+import ZoomParallax from '../components/Parallex/index';
 export default function Home() {
   return (
     <>
@@ -23,6 +23,8 @@ export default function Home() {
           <Hero/>
         </div>
       </div>
+      <ZoomParallax />
+
     </>
   );
 }
