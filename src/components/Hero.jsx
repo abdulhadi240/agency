@@ -17,7 +17,7 @@ const Hero = () => {
             height={500}
             width={500}
             alt="img"
-            className="rounded-2xl sm:h-[350px] sm:w-[350px] h-[250px] w-[250px]" /* Adjust size on mobile */
+            className="rounded-2xl sm:h-[400px] sm:w-[400px] h-[250px] w-[250px]" /* Adjust size on mobile */
           />
         </div>
         <div className="absolute top-32 -left-1 sm:-left-20">

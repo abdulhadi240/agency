@@ -90,8 +90,7 @@ export default function Index() {
       <div style={{ height: "100vh" }}></div>
       <Character paragraph={paragraph} />
       <div style={{ height: "100vh" }}></div>
-      <Character paragraph={paragraph} />
-      <div style={{ height: "100vh" }}></div>
+      
     </>
   );
 }
