@@ -48,7 +48,7 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="absolute p-1 text-xs border-[#BEFB7C] border-[2px] text-white uppercase bg-black top-2 right-2 ">
+        <p className="absolute p-1 font-semibold text-[9px] border-[#BEFB7C] border-[2px] text-white uppercase bg-black top-2 right-2 ">
           {card.title}
         </p>
       </div>
