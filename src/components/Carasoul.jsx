@@ -1,5 +1,6 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
+import { Link } from 'next-view-transitions'
 import { useRef } from "react";
 const Carasoul = () => {
   return (
@@ -34,7 +35,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div
+    <Link href={card.link}><div
       key={card.id}
       className="group relative h-[500px] w-[500px] overflow-hidden bg-neutral-200 hover:cursor-none"
       style={{ cursor: `url(/cursor.svg), auto` }}
@@ -52,7 +53,7 @@ const Card = ({ card }) => {
           {card.title}
         </p>
       </div>
-    </div>
+    </div></Link>
   );
 };
 export default Carasoul;
@@ -61,25 +62,25 @@ const cards = [
   {
     url: "/marketing.jpeg",
     title: "Marketing",
-    heading: "Marketing",
+    link: "/work/marketing",
     id: 1,
   },
   {
     url: "/web.jpg",
     title: "Website",
-    heading: "Marketing",
+    link: "/work/marketing",
     id: 2,
   },
   {
     url: "/brand.jpg",
     title: "Branding",
-    heading: "Marketing",
+    link: "/work/branding",
     id: 3,
   },
   {
     url: "/daraz.jpg",
     title: "Daraz",
-    heading: "Marketing",
+    link: "/work/branding",
     id: 4,
   },
 ];

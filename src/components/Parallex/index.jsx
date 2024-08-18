@@ -1,12 +1,12 @@
 "use client";
 import styles from "./styles.module.scss";
-import Picture1 from "../../../public/1.jpeg";
-import Picture2 from "../../../public/2.jpeg";
-import Picture3 from "../../../public/3.jpg";
+import Picture1 from "../../../public/01.webp";
+import Picture2 from "../../../public/02.webp";
+import Picture3 from "../../../public/logo.webp";
 import Picture4 from "../../../public/4.jpg";
 import Picture5 from "../../../public/5.jpg";
 import Picture6 from "../../../public/6.jpg";
-import Picture7 from "../../../public/7.jpeg";
+import Picture7 from "../../../public/02.png";
 import Character from "@/components/paragraph/Character";
 
 import Image from "next/image";
