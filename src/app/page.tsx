@@ -179,18 +179,18 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="hidden mt-20 sm:block">
+      <div className="mt-20 ">
         <Achivement />
       </div>
 
-      <div className="hidden mt-32 sm:block">
+      <div className="mt-32 overflow-hidden">
         <Marquee1 />
       </div>
-      <div className="hidden mt-24 text-white sm:flex sm:flex-col ">
+      <div className="flex flex-col mt-24 text-white ">
         <div className="flex flex-col justify-center text-center uppercase sm:flex-row">
           <h1 className="text-xs">ready. set.</h1>
         </div>
-        <div className="flex justify-center text-[60px] font-bold text-center text-white uppercase lg:text-[200px]">
+        <div className="flex justify-center text-[80px] font-bold text-center text-white uppercase lg:text-[200px]">
           LAUNCH
         </div>
         <div className="flex justify-center font-bold text-center uppercase -mt-7 sm:-mt-14 text-8xl text1">
