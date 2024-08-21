@@ -81,6 +81,12 @@ export default function Index() {
     transform: "rotate(180deg)", // Rotates the Lottie animation by 45 degrees
   };
 
+  const style1 = {
+    height: 80,
+    width: 80,
+    transform: "rotate(180deg)", // Rotates the Lottie animation by 45 degrees
+  };
+
   return (
     <>
       <div ref={container} className={styles.container}>
@@ -96,10 +102,9 @@ export default function Index() {
           })}
         </div>
       </div>
-      <Character paragraph={paragraph} />
       <div className="mx-10 text-white">
       <div >
-        <h1 className="text-2xl font-bold text-[#BEFB7C]">Background:</h1>
+        <h1 className="text-2xl font-bold text-[#BEFB7C] mt-4">Background:</h1>
         <p className="mt-2 text-white/70">
           Our client, a complete novice in e-commerce, came to us after a
           disappointing experience with another agency. Despite working with
@@ -141,8 +146,11 @@ export default function Index() {
           >
             <Image src={"/0.png"} width={900} height={700} alt="image" />
           </motion.div>
-          <div className="flex justify-center">
+          <div className="hidden sm:justify-center sm:flex">
             <Lottie animationData={arrow} loop={true} style={style} />
+          </div>
+          <div className="flex justify-center sm:hidden">
+            <Lottie animationData={arrow} loop={true} style={style1} />
           </div>
           <motion.div
             initial={{ scaleY: 0.8 }}
@@ -153,7 +161,6 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      <Character paragraph={para1} />
     </>
   );
 }

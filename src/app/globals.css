@@ -38,6 +38,6 @@ html{
 
 @media (max-width: 480px) {
     .text {
-        font-size: 70px; /* Adjust the font size for small devices */
+        font-size: 80px; /* Adjust the font size for small devices */
     }
 }
