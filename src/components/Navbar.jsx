@@ -1,26 +1,13 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export const Example = () => {
-  const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowNav(true);
-    }, 1000);
-
-    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
-  }, []);
-
-
   return (
     <section className="bg-neutral-950">
-      {showNav && 
-      <motion.div initial={{opacity:0}} animate={{opacity:1}}>
-      <SimpleFloatingNav />
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <SimpleFloatingNav />
       </motion.div>
-      }
     </section>
   );
 };
