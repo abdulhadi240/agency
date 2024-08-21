@@ -1,9 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import HeroImage from "../../../components/HeroImage";
+import Text from "../../../components/Text";
+import ImageGallery from '@/components/ImageGallery'
+
 const page = () => {
   return (
-    <div className="mx-40 -mt-10 overflow-hidden">
+    <div className="mx-1 -mt-10 overflow-hidden text-white lg:mx-40 sm:mx-20">
       <div className="flex items-center justify-between ">
         <div className="flex flex-col justify-center min-h-screen text-white ">
           <div className="flex flex-col items-start justify-center gap-4 tracking-widest">
@@ -33,9 +36,20 @@ const page = () => {
           <h1 className="mt-2 text-white/70">Ongoing</h1>
         </div>
       </div>
-     
+
       <div className="mt-20 overflow-hidden rounded-2xl">
-        <Image src={'/marketing.jpeg'} width={1000} height={1000} alt="logo" className="overflow-hidden transition-all rounded-2xl hover:rounded-2xl hover:scale-110"/>
+        <Image
+          src={"/marketing.jpeg"}
+          width={1000}
+          height={1000}
+          alt="logo"
+          className="overflow-hidden transition-all rounded-2xl hover:rounded-2xl hover:scale-110"
+        />
+      </div>
+      <Text/>
+
+      <div>
+        <ImageGallery/>
       </div>
     </div>
   );

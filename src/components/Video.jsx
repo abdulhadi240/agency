@@ -43,7 +43,7 @@ export default function Video() {
 
   return (
     <main>
-      <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-xl overflow-hidden">
+      <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-3xl overflow-hidden">
         <div className="absolute z-10 top-4 right-4">
           <VideoPlayerControls
             progress={videoProgress}

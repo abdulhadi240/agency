@@ -5,6 +5,16 @@ import Carasoul from '@/components/Carasoul'
 import Achivement from "@/components/Achivement";
 import Marquee1 from "@/components/Marquee";
 import Video from "@/components/Video";
+import Image from "next/image";
+import Services from "@/components/Services";
+import lottie1 from '@/components/animate/1.json'
+import lottie2 from '@/components/animate/2.json'
+import lottie3 from '@/components/animate/3.json'
+import lottie4 from '@/components/animate/4.json'
+import lottie5 from '@/components/animate/website.json'
+import lottie6 from '@/components/animate/inventory.json'
+import lottie7 from '@/components/animate/sales.json'
+
 export default function Home() {
   return (
     <>
@@ -37,10 +47,28 @@ export default function Home() {
         <h1 className="flex justify-center mb-20 text-5xl font-bold text-white sm:text-7xl">CASE <span className="text-[#BEFB7C] pl-3">STUDIES.</span></h1>
       <ZoomParallax />
       </div>
+      <div className="relative">
+        <img src={'/service.webp'} alt="image" className="object-cover w-full h-full brightness-75"/>
+        <div className="absolute inset-0 flex justify-center text-xl font-bold text-white sm:text-3xl">
+          <div>
+          <h1 className="flex justify-center text-2xl">Everything you need for E-commerce Business</h1>
+          <p className="flex justify-center max-w-lg mt-3 text-xs text-center text-white/80">Ever feel like authentication requirements change with the season? Clerk keeps up with the latest trends and security best practices.</p>
+          </div>
+        </div>
+        <div className="absolute grid grid-cols-3 gap-4 text-xl font-bold text-white top-44 left-10 sm:text-3xl">
+            <Services lottie={lottie5} text={'Website Creation'} paragraph={'hello this is a mad show'} />
+            <Services lottie={lottie4} text={'Product Hunting'} paragraph={'hello this is a mad show'} />
+            <Services lottie={lottie3} text={'Marketing'} paragraph={'hello this is a mad show'} />
+            <Services lottie={lottie6} text={'Inventory Managment'} paragraph={'hello this is a mad show'} />
+            <Services lottie={lottie2} text={'Delivery Managment'} paragraph={'hello this is a mad show'} />
+            <Services lottie={lottie7} text={'Sales'} paragraph={'hello this is a mad show'} />
 
-      {/*<div>
+
+          </div>
+      </div>
+      <div>
         <Achivement/>
-      </div>*/}
+      </div>
 
       <div>
         <Marquee1/>
