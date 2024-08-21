@@ -26,6 +26,16 @@ html{
     -webkit-text-stroke: 3px transparent;
 }
 
+.text2{
+    font-size: 100px;
+    color: black;
+    text-transform: capitalize;
+    background-color: #BEFB7C;
+    background-size: 250% 250%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+}
+
 @media (max-width: 480px) {
     .text {
         font-size: 70px; /* Adjust the font size for small devices */
