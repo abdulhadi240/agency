@@ -23,7 +23,7 @@ const HeroImage = () => {
         initial={{ scale: 1 }} // Start at normal size
       >
         <Image
-          src={"/marketing.jpeg"}
+          src={"/marketing.webp"}
           width={1000}
           height={1000}
           alt="logo"

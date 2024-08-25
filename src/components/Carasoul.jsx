@@ -60,25 +60,25 @@ export default Carasoul;
 
 const cards = [
   {
-    url: "/marketing.jpeg",
+    url: "/marketing.webp",
     title: "Marketing",
     link: "/work/marketing",
     id: 1,
   },
   {
-    url: "/web.jpg",
+    url: "/web.webp",
     title: "Website",
     link: "/work/marketing",
     id: 2,
   },
   {
-    url: "/brand.jpg",
+    url: "/brand.webp",
     title: "Branding",
     link: "/work/branding",
     id: 3,
   },
   {
-    url: "/daraz.jpg",
+    url: "/daraz.webp",
     title: "Daraz",
     link: "/work/branding",
     id: 4,

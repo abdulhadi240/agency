@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative flex justify-center text-center">
         <div>
           <Image
-            src={"/Container.png"}
+            src={"/Container.webp"}
             height={500}
             width={500}
             alt="img"

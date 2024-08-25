@@ -7,7 +7,7 @@ export default function RotatingImage() {
   return (
     <div className="">
       <motion.div
-        className="relative -z-9999 w-32 h-32"
+        className="relative w-32 h-32 -z-9999"
         animate={{ rotate: 360 }}
         transition={{
           repeat: Infinity,
@@ -16,7 +16,7 @@ export default function RotatingImage() {
         }}
       >
         <Image
-          src="/link11.png" // Replace with your image path
+          src="/link11.webp" // Replace with your image path
           alt="Rotating Image"
           layout="fill"
           objectFit="cover"

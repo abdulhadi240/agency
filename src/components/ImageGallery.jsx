@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import picture1 from '../../public/marketing.jpeg';
-import picture2 from '../../public/mockup.jpg';
-import picture3 from '../../public/brand.jpg';
-import picture4 from '../../public/web.jpg';
+import picture1 from '../../public/marketing.webp';
+import picture2 from '../../public/mockup.webp';
+import picture3 from '../../public/brand.webp';
+import picture4 from '../../public/web.webp';
 
 const images = [
   { src: picture1, alt: "Marketing image" },

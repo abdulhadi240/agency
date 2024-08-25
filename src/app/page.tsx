@@ -1,22 +1,25 @@
 import Link from "next/link";
 import Hero from "../components/Hero";
-import ZoomParallax from "../components/Parallex/index";
-import Carasoul from "@/components/Carasoul";
-import Achivement from "@/components/Achivement";
-import Marquee1 from "@/components/Marquee";
-import Video from "@/components/Video";
-import Image from "next/image";
-import Services from "@/components/Services";
-import lottie1 from "@/components/animate/1.json";
-import lottie2 from "@/components/animate/2.json";
-import lottie3 from "@/components/animate/3.json";
 import lottie4 from "@/components/animate/4.json";
 import lottie5 from "@/components/animate/website.json";
 import lottie6 from "@/components/animate/inventory.json";
-import lottie7 from "@/components/animate/sales.json";
 import animation1 from "@/components/animate/planning.json";
 import animation2 from "@/components/animate/market.json";
-import Services1 from '@/components/Services1'
+import dynamic from "next/dynamic";
+
+const Testimonail = dynamic(() => import("@/components/Testimonail"));
+const Services1 = dynamic(() => import("@/components/Services1"));
+const Services = dynamic(() => import("@/components/Services"));
+const Video = dynamic(() => import("@/components/Video"));
+const Marquee1 = dynamic(() => import("@/components/Marquee"));
+const Achivement = dynamic(() => import("@/components/Achivement"));
+const Carasoul = dynamic(() => import("@/components/Carasoul"));
+const ZoomParallax = dynamic(() => import("../components/Parallex/index"));
+
+
+
+
+
 export default function Home() {
   return (
     <>
@@ -73,7 +76,7 @@ export default function Home() {
               "We begin by understanding your business goals and target audience. Together, we develop a tailored strategy that aligns your objectives with market demands. This includes competitive analysis, market research, and setting clear KPIs. Based on this strategy, we create a roadmap that guides the entire project."
             }
             right={false}
-            image={"/Group8.png"}
+            image={"/Group8.webp"}
             lottie={animation1}
           />
           <Services
@@ -84,7 +87,7 @@ export default function Home() {
               "Once the strategy is in place, we design and develop a high-performing, user-friendly website. We focus on creating a seamless user experience with intuitive navigation, fast load times, and mobile responsiveness. This stage includes developing wireframes, interactive prototypes, and the final build with a focus on functionality and aesthetics."
             }
             right={true}
-            image={"/Group3.png"}
+            image={"/Group3.webp"}
             lottie={lottie5}
           />
           <Services
@@ -95,7 +98,7 @@ export default function Home() {
               "Finding the right products is crucial to your success. We assist in identifying trending and profitable products that resonate with your target audience. This involves thorough research, supplier vetting, and ensuring the products meet quality standards."
             }
             right={false}
-            image={"/Group4.png"}
+            image={"/Group4.webp"}
             lottie={lottie4}
           />
           <Services
@@ -106,7 +109,7 @@ export default function Home() {
               "With your website live and products ready, we craft a comprehensive marketing strategy to drive traffic and conversions. This includes SEO, social media marketing, email campaigns, and paid advertising."
             }
             right={true}
-            image={"/Group4.png"}
+            image={"/Group4.webp"}
             lottie={animation2}
           />
           <Services
@@ -117,7 +120,7 @@ export default function Home() {
               "We integrate a seamless logistics system, managing inventory, shipping, and returns with trusted partners to ensure timely deliveries and happy customers."
             }
             right={false}
-            image={"/Group5.png"}
+            image={"/Group5.webp"}
             lottie={lottie6}
           />
         </div>
@@ -130,7 +133,7 @@ export default function Home() {
               "We begin by understanding your business goals and target audience. Together, we develop a tailored strategy that aligns your objectives with market demands. This includes competitive analysis, market research, and setting clear KPIs. Based on this strategy, we create a roadmap that guides the entire project."
             }
             right={false}
-            image={"/Group8.png"}
+            image={"/Group8.webp"}
             lottie={animation1}
           />
           <Services1
@@ -141,7 +144,7 @@ export default function Home() {
               "Once the strategy is in place, we design and develop a high-performing, user-friendly website. We focus on creating a seamless user experience with intuitive navigation, fast load times, and mobile responsiveness. This stage includes developing wireframes, interactive prototypes, and the final build with a focus on functionality and aesthetics."
             }
             right={true}
-            image={"/Group3.png"}
+            image={"/Group3.webp"}
             lottie={lottie5}
           />
           <Services1
@@ -152,7 +155,7 @@ export default function Home() {
               "Finding the right products is crucial to your success. We assist in identifying trending and profitable products that resonate with your target audience. This involves thorough research, supplier vetting, and ensuring the products meet quality standards."
             }
             right={false}
-            image={"/Group4.png"}
+            image={"/Group4.webp"}
             lottie={lottie4}
           />
           <Services1
@@ -163,7 +166,7 @@ export default function Home() {
               "With your website live and products ready, we craft a comprehensive marketing strategy to drive traffic and conversions. This includes SEO, social media marketing, email campaigns, and paid advertising."
             }
             right={true}
-            image={"/Group4.png"}
+            image={"/Group4.webp"}
             lottie={animation2}
           />
           <Services1
@@ -174,13 +177,17 @@ export default function Home() {
               "We integrate a seamless logistics system, managing inventory, shipping, and returns with trusted partners to ensure timely deliveries and happy customers."
             }
             right={false}
-            image={"/Group5.png"}
+            image={"/Group5.webp"}
             lottie={lottie6}
           />
         </div>
       </div>
       <div className="mt-20 ">
         <Achivement />
+      </div>
+
+      <div>
+        <Testimonail/>
       </div>
 
       <div className="mt-32 overflow-hidden">

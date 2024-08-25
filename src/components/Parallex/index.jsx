@@ -1,13 +1,12 @@
 "use client";
 import styles from "./styles.module.scss";
-import Picture1 from "../../../public/01.webp";
+import Picture1 from "../../../public/1.webp";
 import Picture2 from "../../../public/02.webp";
-import Picture3 from "../../../public/logo.webp";
-import Picture4 from "../../../public/02.png";
-import Picture5 from "../../../public/02.png";
-import Picture6 from "../../../public/02.png";
-import Picture7 from "../../../public/02.png";
-import Character from "@/components/paragraph/Character";
+import Picture3 from "../../../public/02.webp";
+import Picture4 from "../../../public/02.webp";
+import Picture5 from "../../../public/02.webp";
+import Picture6 from "../../../public/02.webp";
+import Picture7 from "../../../public/02.webp";
 import Lottie from "lottie-react";
 import arrow from "@/components/animate/arrow.json";
 
@@ -144,7 +143,7 @@ export default function Index() {
             whileInView={{ scaleY: 1 }}
             transition={{ duration: 1 }}
           >
-            <Image src={"/0.png"} width={900} height={700} alt="image" />
+            <Image src={"/0.webp"} width={900} height={700} alt="image" />
           </motion.div>
           <div className="hidden sm:justify-center sm:flex">
             <Lottie animationData={arrow} loop={true} style={style} />
@@ -157,7 +156,7 @@ export default function Index() {
             whileInView={{ scaleY: 1 }}
             transition={{ duration: 1 }}
           >
-            <Image src={"/1.png"} width={900} height={700} alt="image" />
+            <Image src={"/1_1.webp"} width={900} height={700} alt="image" />
           </motion.div>
         </div>
       </div>
