@@ -11,10 +11,10 @@ const nextConfig = {
       return config;
     },
     experimental: {
-      optimizePackageImports: ['icon-library'],
+      ppr: 'incremental',
     },
   };
-  
+
   export default withBundleAnalyzer({
     enabled: process.env.ANALYZE === 'true',
   })(nextConfig);
