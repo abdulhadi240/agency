@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import withBundleAnalyzer from '@next/bundle-analyzer';
+
 const nextConfig = {
     webpack(config) {
       config.module.rules.push({
@@ -8,6 +10,12 @@ const nextConfig = {
   
       return config;
     },
+    experimental: {
+      optimizePackageImports: ['icon-library'],
+    },
   };
   
-  export default nextConfig;
+  export default withBundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true',
+  })(nextConfig);
+  

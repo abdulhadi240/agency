@@ -7,14 +7,14 @@ import animation1 from "@/components/animate/planning.json";
 import animation2 from "@/components/animate/market.json";
 import dynamic from "next/dynamic";
 
-const Testimonail = dynamic(() => import("@/components/Testimonail"));
-const Services1 = dynamic(() => import("@/components/Services1"));
-const Services = dynamic(() => import("@/components/Services"));
-const Video = dynamic(() => import("@/components/Video"));
-const Marquee1 = dynamic(() => import("@/components/Marquee"));
-const Achivement = dynamic(() => import("@/components/Achivement"));
-const Carasoul = dynamic(() => import("@/components/Carasoul"));
-const ZoomParallax = dynamic(() => import("../components/Parallex/index"));
+const Testimonail = dynamic(() => import("@/components/Testimonail"),{ssr:false});
+const Services1 = dynamic(() => import("@/components/Services1"),{ssr:false});
+const Services = dynamic(() => import("@/components/Services"),{ssr:false});
+const Video = dynamic(() => import("@/components/Video"),{ssr:false});
+const Marquee1 = dynamic(() => import("@/components/Marquee"),{ssr:false});
+const Achivement = dynamic(() => import("@/components/Achivement"),{ssr:false});
+const Carasoul = dynamic(() => import("@/components/Carasoul"),{ssr:false});
+const ZoomParallax = dynamic(() => import("../components/Parallex/index"),{ssr:false});
 
 
 
