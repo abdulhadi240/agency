@@ -16,6 +16,7 @@ const Hero = () => {
             src={"/Container.webp"}
             height={500}
             width={500}
+            priority
             alt="img"
             className="rounded-2xl sm:h-[400px] sm:w-[400px] h-[250px] w-[250px]" /* Adjust size on mobile */
           />
